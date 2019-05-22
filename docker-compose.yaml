@@ -8,6 +8,7 @@ services:
       - "80:80"
     volumes:
       - /var/projects/kata-test:/app
+
     depends_on:
       - composer
   composer:
