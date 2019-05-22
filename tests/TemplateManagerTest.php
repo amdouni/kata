@@ -11,6 +11,9 @@ require_once __DIR__ . '/../src/Repository/Repository.php';
 require_once __DIR__ . '/../src/Repository/DestinationRepository.php';
 require_once __DIR__ . '/../src/Repository/QuoteRepository.php';
 require_once __DIR__ . '/../src/Repository/SiteRepository.php';
+require_once __DIR__ . '/../src/Service/ContentRenderer.php';
+require_once __DIR__ . '/../src/Service/QuoteRenderer.php';
+require_once __DIR__ . '/../src/Service/PlaceholderHandler.php';
 require_once __DIR__ . '/../src/TemplateManager.php';
 
 class TemplateManagerTest extends PHPUnit_Framework_TestCase
