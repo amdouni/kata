@@ -1,0 +1,16 @@
+version: "3.7"
+
+services:
+  site:
+    image: webdevops/php-apache-dev:7.3
+    container_name: site
+    ports:
+      - "80:80"
+    volumes:
+      - /var/projects/kata-test:/app
+    depends_on:
+      - composer
+  composer:
+    image: composer:latest
+    volumes:
+      - /var/projects/kata-test:/app

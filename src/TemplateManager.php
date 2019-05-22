@@ -38,14 +38,14 @@ class TemplateManager
                 if ($containsSummaryHtml !== false) {
                     $text = str_replace(
                         '[quote:summary_html]',
-                        Quote::renderHtml($_quoteFromRepository),
+                        QuoteRenderer::renderHtml($_quoteFromRepository),
                         $text
                     );
                 }
                 if ($containsSummary !== false) {
                     $text = str_replace(
                         '[quote:summary]',
-                        Quote::renderText($_quoteFromRepository),
+                        QuoteRenderer::renderText($_quoteFromRepository),
                         $text
                     );
                 }
